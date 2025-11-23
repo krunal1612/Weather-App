@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- Dark Mode Toggle -->
+        
+<button id="themeToggle" class="theme-btn">
+    <span class="toggle-icon">🌙</span>
+</button>
+<h1 class="title-glass">Weather App</h1>
+
+
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name...📍" >
+        <i class="bi bi-search"></i>
+        <button onclick="getWeather()"><h3>🔎</h3></button>
+    </div>
+
+    <!-- Search history -->
+    <div class="history">
+        <h3>⌛Recent Searches</h3>
+        <ul id="historyList"></ul>
+    </div>
+
+    <!-- Weather Now -->
+    <div class="weather-info" id="weatherInfo"></div>
+
+    <!-- Forecast -->
+    <h3 class="forecast-title">3-Day Forecast</h3>
+    <div class="forecast" id="forecast"></div>
+
+
+
+<p class="credit"></p>
+<div class="watermark">© 2025 Created by Krunal</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
